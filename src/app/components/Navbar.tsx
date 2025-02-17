@@ -28,6 +28,7 @@ export default function Navbar() {
     { name: "Admissions", path: "/admissions" },
     { name: "Contact", path: "/contact" },
     { name: "Faculty", path: "/faculty" },
+    { name: "Internships", path: "/internship" },
   ];
 
   return (
