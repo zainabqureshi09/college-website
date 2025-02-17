@@ -3,6 +3,9 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
 import { LearningMaterials } from "../components/Learning";
+import { Merienda } from "next/font/google";
+
+const merienda = Merienda({ subsets: ["latin"], weight: "700" });
 
 
 const subjectGroups = [
@@ -66,13 +69,15 @@ const LearningPage = () => {
     <div className="max-w-6xl mx-auto px-6 py-12">
       {/* 🚀 Subject Groups Section */}
       <motion.h1
-        className="text-center text-4xl md:text-5xl font-extrabold text-gray-800 mb-12"
+          className={`${merienda.className} text-blue-700 text-center text-5xl md:text-6xl font-bold drop-shadow-lg`}
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
       >
         📚 Explore Your Subjects
       </motion.h1>
+      <br />
+      <br />
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
         {subjectGroups.map((group, index) => (
