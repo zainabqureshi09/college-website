@@ -4,6 +4,7 @@ import Navbar from './components/Navbar';
 import Head from "next/head";
 import Link from "next/link";
 import './globals.css';
+import { Metadata } from "next"; 
 
 export const metadata: Metadata = {
   title: "FKWC",
