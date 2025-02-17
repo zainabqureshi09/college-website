@@ -45,7 +45,7 @@ export default function AboutPage() {
   return (
     <main>
       {/* Hero Section */}
-      <section className="relative w-full h-[450px] flex items-center justify-center text-center bg-[url('/image1.webp')] bg-cover bg-center">
+      <section className="relative w-full h-[450px] flex items-center justify-center text-center bg-[url('/aboutCol.jpg')] bg-cover bg-center">
         <div className="absolute top-0 left-0 w-full h-full bg-black/50 backdrop-blur-sm"></div>
         <motion.div
           className="relative z-10 text-white px-6"
@@ -119,12 +119,12 @@ export default function AboutPage() {
             transition={{ duration: 1 }}
           >
             <Image
-              src="/image3.jpeg"
+              src="/about1.jpg"
               alt="Campus"
               width={600}
               height={400}
               className="w-full h-auto rounded-lg object-cover"
-              priority={true} // Ensures faster loading
+              priority={true} 
             />
           </motion.div>
         </div>
